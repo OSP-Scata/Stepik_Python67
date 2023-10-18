@@ -1,0 +1,10 @@
+n = int(input())
+s = n
+s2 = abs(n**2)
+while s != 0:
+    n = int(input())
+    s += n
+    s2 += abs(n)**2
+    if s == 0:
+        break
+print(s2)

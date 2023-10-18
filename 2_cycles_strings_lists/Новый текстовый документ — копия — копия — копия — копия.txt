@@ -1,0 +1,11 @@
+n = int(input())
+a = [[i] * i for i in range(n + 1)]
+simpleList = []
+for i in a:
+    for j in i:
+        simpleList.append(j)
+finList = []
+for i in range(n):
+    finList.append(simpleList[i])
+for i in finList:
+    print(i, end=' ')

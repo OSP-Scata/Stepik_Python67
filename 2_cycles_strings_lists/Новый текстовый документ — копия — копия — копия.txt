@@ -1,0 +1,11 @@
+lst = [int(i) for i in input().split()]
+x = int(input())
+ind = []
+for i in range(len(lst)):
+    if lst[i] == x:
+        ind.append(i)
+if not ind:
+    print('Отсутствует')
+else:
+    for i in ind:
+        print(i, end=' ')
